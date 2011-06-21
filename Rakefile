@@ -4,14 +4,15 @@ require 'rake/rdoctask'
 require 'rake/testtask'
 
 spec = Gem::Specification.new do |s|
-    s.name      =   "http-log-parser"
-    s.version   =   "0.0.2"
-    s.author    =   "Torsten Curdt"
-    s.email     =   "tcurdt at vafer.org"
-    s.homepage  =   "http://github.com/tcurdt/http-log-parser"
-    s.description = "HTTP log file parser"
-    s.summary   =   "A package for parsing web server logs."
-
+    s.name      =   "vizi_whois"
+    s.version   =   "0.1.0"
+    s.author    =   "Al Kivi"
+    s.email     =   "al.kivi at vizitrax.com"
+    s.homepage  =   "http://github.com/al-kivi/Vizi_Whois"
+    s.summary = "Global whois module to select the right whois server and get response data"
+    s.description = "This gem module provides a classes to find the right Regional Internet Registry
+      for a given IP Address. The query method will navigate each major RIR until a response is found"
+    
     s.platform  =   Gem::Platform::RUBY
     s.has_rdoc  =   true
     s.extra_rdoc_files  =   ["README.rdoc"]
