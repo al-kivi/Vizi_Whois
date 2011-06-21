@@ -1,0 +1,240 @@
+----------------------------------------------------------------
+> 79.142.69.69
+>> NL
+>>> ripe
+----------------------------------------------------------------
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to '79.142.68.0 - 79.142.71.255'
+
+inetnum:        79.142.68.0 - 79.142.71.255
+netname:        ALTUSHOST-NET
+descr:          AltusHost Inc.
+country:        NL
+admin-c:        AHN-RIPE
+tech-c:         AHN-RIPE
+status:         ASSIGNED PA
+mnt-by:         ALTUSHOST-MNT
+mnt-by:         ALTUSHOST-MNT
+mnt-lower:      ALTUSHOST-MNT
+mnt-routes:     ALTUSHOST-MNT
+source:         RIPE # Filtered
+
+role:           AltusHost - Contact Role
+address:        ALTUSHOST INC.
+address:        P.O. Box 1106
+address:        Belize City, Belize
+address:        Central America
+phone:          +1.2176507100
+fax-no:         +1.8012892788
+abuse-mailbox:  abuse@altushost.com
+abuse-mailbox:  abuse@nelux.net
+admin-c:        AHN-RIPE
+tech-c:         AHN-RIPE
+nic-hdl:        AHN-RIPE
+mnt-by:         ALTUS-MNT
+source:         RIPE # Filtered
+
+% Information related to '79.142.64.0/20AS49544'
+
+route:          79.142.64.0/20
+descr:          ALTUSHOST INC.
+origin:         AS49544
+mnt-by:         ALTUSHOST-MNT
+source:         RIPE # Filtered
+
+
+----------------------------------------------------------------
+> 66.119.167.210
+>> CA
+>>> arin
+----------------------------------------------------------------
+#
+# The following results may also be obtained via:
+# http://whois.arin.net/rest/nets;handle=NET-66-119-160-0-1?showDetails=true&showARIN=false
+#
+
+NetRange:       66.119.160.0 - 66.119.191.255
+CIDR:           66.119.160.0/19
+OriginAS:       AS25976
+NetName:        METROBRIDGE-NET
+NetHandle:      NET-66-119-160-0-1
+Parent:         NET-66-0-0-0-0
+NetType:        Direct Allocation
+RegDate:        2001-06-08
+Updated:        2008-06-27
+Ref:            http://whois.arin.net/rest/net/NET-66-119-160-0-1
+
+OrgName:        MetroBridge Networks Corporation
+OrgId:          MNC-40
+Address:        918 - 1030 West Georgia Street
+City:           Vancouver
+StateProv:      BC
+PostalCode:     V6E-2Y3
+Country:        CA
+RegDate:        2005-12-12
+Updated:        2010-04-01
+Ref:            http://whois.arin.net/rest/org/MNC-40
+
+OrgTechHandle: MTP7-ARIN
+OrgTechName:   MBN Tech POC
+OrgTechPhone:  +1-604-628-1240 
+OrgTechEmail:  MBNtechPOC@metrobridge.com
+OrgTechRef:    http://whois.arin.net/rest/poc/MTP7-ARIN
+
+RNOCHandle: MTP7-ARIN
+RNOCName:   MBN Tech POC
+RNOCPhone:  +1-604-628-1240 
+RNOCEmail:  MBNtechPOC@metrobridge.com
+RNOCRef:    http://whois.arin.net/rest/poc/MTP7-ARIN
+
+RTechHandle: MTP7-ARIN
+RTechName:   MBN Tech POC
+RTechPhone:  +1-604-628-1240 
+RTechEmail:  MBNtechPOC@metrobridge.com
+RTechRef:    http://whois.arin.net/rest/poc/MTP7-ARIN
+
+RAbuseHandle: MTP7-ARIN
+RAbuseName:   MBN Tech POC
+RAbusePhone:  +1-604-628-1240 
+RAbuseEmail:  MBNtechPOC@metrobridge.com
+RAbuseRef:    http://whois.arin.net/rest/poc/MTP7-ARIN
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/whois_tou.html
+#
+
+----------------------------------------------------------------
+> 219.91.245.192
+>> IN
+>>> apnic
+----------------------------------------------------------------
+% [whois.apnic.net node-4]
+% Whois data copyright terms    http://www.apnic.net/db/dbcopyright.html
+
+inetnum:      219.91.240.0 - 219.91.255.255
+netname:      YOUTELE
+descr:        YOU Telecom India Pvt Ltd
+country:      IN
+admin-c:      SG135-AP
+tech-c:       NI23-AP
+status:       ASSIGNED NON-PORTABLE
+mnt-by:       MAINT-IN-YOU
+changed:      network@youtele.com  20091209
+source:       APNIC
+
+route:          219.91.192.0/18
+descr:          YOU Broadband & Cable India Ltd.
+country:        IN
+origin:         AS18207
+mnt-by:         MAINT-IN-YOU
+changed:        hm-changed@apnic.net 20040706
+changed:        hm-changed@apnic.net 20050831
+changed:        hm-changed@apnic.net 20100323
+source:         APNIC
+
+person:         SRIDHAR G
+nic-hdl:        SG135-AP
+e-mail:         gr.sridhar@youbroadband.co.in
+remarks:        -----------------------------------------
+remarks:        send abuse and spam report to
+remarks:        abuse@youbroadband.in or spamlog@youbroadband.in
+remarks:        -----------------------------------------
+address:        YOU Broadband & Cable India Ltd.
+address:        Millenium Arcade, 2nd floor
+address:        Adajan-Hazira Road
+address:        Surat -395009,Gujarat
+address:        India
+phone:          +91-261-2789500
+fax-no:         +91-261-2789501
+country:        IN
+changed:        network@youbroadband.in 20100512
+mnt-by:         MAINT-IN-YOU
+changed:        hm-changed@apnic.net 20100512
+source:         APNIC
+
+person:         NOC IQARA
+nic-hdl:        NI23-AP
+e-mail:         network@youtele.com
+address:        YOU Broadband & Cable India Ltd.
+address:        Iqara Center
+address:        Adajan-Hazira Rd
+address:        Surat-9
+phone:          +91-261-2789500
+fax-no:         +91-261-2789501
+country:        IN
+changed:        network@youtele.com 20061103
+mnt-by:         MAINT-IN-YOU
+source:         APNIC
+
+
+----------------------------------------------------------------
+> 2001:4860:b002::68
+>> US
+>>> arin
+----------------------------------------------------------------
+#
+# The following results may also be obtained via:
+# http://whois.arin.net/rest/nets;q=2001:4860:b002::68?showDetails=true&showARIN=false
+#
+
+NetRange:       2001:4860:: - 2001:4860:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
+CIDR:           2001:4860::/32
+OriginAS:       AS15169
+NetName:        GOOGLE-IPV6
+NetHandle:      NET6-2001-4860-1
+Parent:         NET6-2001-4800-0
+NetType:        Direct Allocation
+RegDate:        2005-03-14
+Updated:        2007-09-28
+Ref:            http://whois.arin.net/rest/net/NET6-2001-4860-1
+
+
+OrgName:        Google Inc.
+OrgId:          GOGL
+Address:        1600 Amphitheatre Parkway
+City:           Mountain View
+StateProv:      CA
+PostalCode:     94043
+Country:        US
+RegDate:        2000-03-30
+Updated:        2009-08-07
+Ref:            http://whois.arin.net/rest/org/GOGL
+
+OrgTechHandle: ZG39-ARIN
+OrgTechName:   Google Inc
+OrgTechPhone:  +1-650-253-0000 
+OrgTechEmail:  arin-contact@google.com
+OrgTechRef:    http://whois.arin.net/rest/poc/ZG39-ARIN
+
+RNOCHandle: ZG39-ARIN
+RNOCName:   Google Inc
+RNOCPhone:  +1-650-253-0000 
+RNOCEmail:  arin-contact@google.com
+RNOCRef:    http://whois.arin.net/rest/poc/ZG39-ARIN
+
+RAbuseHandle: ZG39-ARIN
+RAbuseName:   Google Inc
+RAbusePhone:  +1-650-253-0000 
+RAbuseEmail:  arin-contact@google.com
+RAbuseRef:    http://whois.arin.net/rest/poc/ZG39-ARIN
+
+RTechHandle: ZG39-ARIN
+RTechName:   Google Inc
+RTechPhone:  +1-650-253-0000 
+RTechEmail:  arin-contact@google.com
+RTechRef:    http://whois.arin.net/rest/poc/ZG39-ARIN
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/whois_tou.html
+#
+

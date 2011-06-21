@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=IBM437" http-equiv="Content-Type" />
+
+  <title>File: Rakefile [RDoc Documentation]</title>
+
+  <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet" />
+
+  <script src="./js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+</head>
+
+<body class="file">
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+        
+          <li class="file"><a href="./Rakefile.html">Rakefile</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./Vizi.html">Vizi</a></li>
+        
+          <li><a href="./Vizi/LogFormat.html">Vizi::LogFormat</a></li>
+        
+          <li><a href="./Vizi/LogParser.html">Vizi::LogParser</a></li>
+        
+          <li><a href="./Vizi/Visit.html">Vizi::Visit</a></li>
+        
+          <li><a href="./Vizi/VisitList.html">Vizi::VisitList</a></li>
+        
+          <li><a href="./Object.html">Object</a></li>
+        
+          <li><a href="./ParserTest.html">ParserTest</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    
+<p>require 'rubygems' require 'rake/gempackagetask' require 'rake/rdoctask'
+require 'rake/testtask'</p>
+
+<p>spec = Gem::Specification.new do |s|</p>
+
+<pre>s.name      =   &quot;http-log-parser&quot;
+s.version   =   &quot;0.0.2&quot;
+s.author    =   &quot;Torsten Curdt&quot;
+s.email     =   &quot;tcurdt at vafer.org&quot;
+s.homepage  =   &quot;http://github.com/tcurdt/http-log-parser&quot;
+s.description = &quot;HTTP log file parser&quot;
+s.summary   =   &quot;A package for parsing web server logs.&quot;
+s.platform  =   Gem::Platform::RUBY
+s.has_rdoc  =   true
+s.extra_rdoc_files  =   [&quot;README.rdoc&quot;]
+s.require_path  =   &quot;lib&quot;
+s.files     =   %w(README.rdoc Rakefile) + Dir.glob(&quot;lib/**/*&quot;)</pre>
+
+<p>end</p>
+
+<p>Rake::GemPackageTask.new(spec) do |pkg|</p>
+
+<pre>pkg.need_tar = true</pre>
+
+<p>end</p>
+
+<p>Rake::RDocTask.new(:rdoc) do |rdoc|</p>
+
+<pre>rdoc.rdoc_dir = 'rdoc'
+rdoc.title    = 'HttpLogParser'
+rdoc.options &lt;&lt; '--line-numbers' &lt;&lt; '--inline-source'
+rdoc.rdoc_files.include('README')
+rdoc.rdoc_files.include('lib/**/*.rb')</pre>
+
+<p>end</p>
+
+<p>Rake::TestTask.new do |t|</p>
+
+<pre>t.libs &lt;&lt; 'test'
+t.test_files = FileList[&quot;test/**/*_test.rb&quot;]
+t.verbose = true</pre>
+
+<p>end</p>
+
+<p>task :default =&gt; "pkg/#{spec.name}-#{spec.version}.gem" do</p>
+
+<pre>puts &quot;generated latest version&quot;</pre>
+
+<p>end</p>
+
+  </div>
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+</body>
+</html>
+

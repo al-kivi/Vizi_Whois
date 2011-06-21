@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="IBM437"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=IBM437" http-equiv="Content-Type" />
+
+  <title>Class: Vizi::LogParser</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../lib/vizi/vizi_tracker_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/vizi/vizi_tracker.rb">lib/vizi/vizi_tracker.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="../Object.html">Object</a></p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-build_format">#build_format</a></li>
+          
+          <li><a href="#method-i-check_format">#check_format</a></li>
+          
+          <li><a href="#method-i-initialize_known_formats">#initialize_known_formats</a></li>
+          
+          <li><a href="#method-i-match_partial">#match_partial</a></li>
+          
+          <li><a href="#method-i-parse_line">#parse_line</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+        
+          <li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../Vizi.html">Vizi</a></li>
+        
+          <li><a href="../Vizi/LogFormat.html">Vizi::LogFormat</a></li>
+        
+          <li><a href="../Vizi/LogParser.html">Vizi::LogParser</a></li>
+        
+          <li><a href="../Vizi/Visit.html">Vizi::Visit</a></li>
+        
+          <li><a href="../Vizi/VisitList.html">Vizi::VisitList</a></li>
+        
+          <li><a href="../Object.html">Object</a></li>
+        
+          <li><a href="../ParserTest.html">ParserTest</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Vizi::LogParser</h1>
+
+    <div id="description" class="description">
+      
+<p>This class handles the parsing of each line in the log file</p>
+
+    </div><!-- description -->
+
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+      <!-- Constants -->
+      <div id="constants-list" class="section">
+        <h3 class="section-header">Constants</h3>
+        <dl>
+        
+          <dt><a name="FIELDNAMES">FIELDNAMES</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="LOG_FORMATS">LOG_FORMATS</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+        </dl>
+      </div>
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="known_formats-attribute-method" class="method-detail">
+          <a name="known_formats"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">known_formats</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(drop_ips, spider_ips, spider_names, page_extensions, homepage, accept_only_homepage, hostname, drop_refers_by_hostname)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>@@log = ActiveRecord::Base.logger</p>
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/vizi/vizi_tracker.rb, line 117</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">drop_ips</span>, <span class="ruby-identifier">spider_ips</span>, <span class="ruby-identifier">spider_names</span>, <span class="ruby-identifier">page_extensions</span>, <span class="ruby-identifier">homepage</span>, <span class="ruby-identifier">accept_only_homepage</span>, <span class="ruby-identifier">hostname</span>, <span class="ruby-identifier">drop_refers_by_hostname</span>)
+  <span class="ruby-ivar">@drops</span> = <span class="ruby-identifier">drop_ips</span>
+  <span class="ruby-ivar">@sips</span> = <span class="ruby-identifier">spider_ips</span>
+  <span class="ruby-ivar">@snames</span> = <span class="ruby-identifier">spider_names</span>
+  <span class="ruby-ivar">@page_extensions</span> = <span class="ruby-identifier">page_extensions</span>
+  <span class="ruby-ivar">@homepage</span> = <span class="ruby-identifier">homepage</span>
+  <span class="ruby-ivar">@accept_only_homepage</span> = <span class="ruby-identifier">accept_only_homepage</span>
+  <span class="ruby-ivar">@hostname</span> = <span class="ruby-identifier">hostname</span>
+  <span class="ruby-ivar">@drop_refers_by_hostname</span> = <span class="ruby-identifier">drop_refers_by_hostname</span>
+  <span class="ruby-ivar">@log_format</span> = []
+  <span class="ruby-identifier">initialize_known_formats</span>
+  <span class="ruby-ivar">@parselog</span> = <span class="ruby-constant">Logger</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">'./log/parse.log'</span>, <span class="ruby-identifier">shift_age</span> = <span class="ruby-string">'weekly'</span>)
+  <span class="ruby-ivar">@parselog</span>.<span class="ruby-identifier">level</span> = <span class="ruby-constant">Logger</span><span class="ruby-operator">::</span><span class="ruby-constant">WARN</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="build_format-method" class="method-detail ">
+          <a name="method-i-build_format"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">build_format</span><span
+              class="method-args">(line)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="build_format-source">
+<pre>
+<span class="ruby-comment"># File lib/vizi/vizi_tracker.rb, line 150</span>
+    <span class="ruby-keyword">def</span> <span class="ruby-identifier">build_format</span>(<span class="ruby-identifier">line</span>)
+      <span class="ruby-identifier">fields</span> = <span class="ruby-identifier">line</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">' '</span>)
+      <span class="ruby-identifier">i</span> = <span class="ruby-value">1</span>
+      <span class="ruby-ivar">@format</span> = <span class="ruby-string">&quot;&quot;</span>
+      <span class="ruby-keyword">while</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">fields</span>.<span class="ruby-identifier">length</span>
+        <span class="ruby-ivar">@format</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;%&quot;</span><span class="ruby-operator">+</span><span class="ruby-constant">FIELDNAMES</span>[<span class="ruby-identifier">fields</span>[<span class="ruby-identifier">i</span>]]<span class="ruby-operator">+</span><span class="ruby-string">&quot; &quot;</span>
+<span class="ruby-comment">#      p log_format</span>
+        <span class="ruby-identifier">i</span> = <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-ivar">@format</span>
+    <span class="ruby-keyword">end</span></pre>
+            </div><!-- build_format-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- build_format-method -->
+
+      
+        <div id="check_format-method" class="method-detail ">
+          <a name="method-i-check_format"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">check_format</span><span
+              class="method-args">(line)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Checks which standard the log file (well one line) is Automatically checks
+for most complex (longest) regex first..</p>
+            
+
+            
+            <div class="method-source-code" id="check_format-source">
+<pre>
+<span class="ruby-comment"># File lib/vizi/vizi_tracker.rb, line 143</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">check_format</span>(<span class="ruby-identifier">line</span>)
+  <span class="ruby-ivar">@known_formats</span>.<span class="ruby-identifier">sort_by</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">log_format</span><span class="ruby-operator">|</span> <span class="ruby-identifier">log_format</span>.<span class="ruby-identifier">format_regex</span>.<span class="ruby-identifier">source</span>.<span class="ruby-identifier">size</span> }.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">log_format</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">key</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">line</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">log_format</span>.<span class="ruby-identifier">format_regex</span>)
+  }
+  <span class="ruby-keyword">return</span> <span class="ruby-value">:unknown</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- check_format-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- check_format-method -->
+
+      
+        <div id="initialize_known_formats-method" class="method-detail ">
+          <a name="method-i-initialize_known_formats"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">initialize_known_formats</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>processes the format string into symbols and test regex and saves using <a
+href="LogFormat.html">LogFormat</a> class</p>
+            
+
+            
+            <div class="method-source-code" id="initialize_known_formats-source">
+<pre>
+<span class="ruby-comment"># File lib/vizi/vizi_tracker.rb, line 134</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize_known_formats</span>
+  <span class="ruby-ivar">@known_formats</span> = {}
+  <span class="ruby-constant">LOG_FORMATS</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-ivar">@known_formats</span>[<span class="ruby-identifier">name</span>] = <span class="ruby-constant">Vizi</span><span class="ruby-operator">::</span><span class="ruby-constant">LogFormat</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">format</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- initialize_known_formats-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- initialize_known_formats-method -->
+
+      
+        <div id="match_partial-method" class="method-detail ">
+          <a name="method-i-match_partial"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">match_partial</span><span
+              class="method-args">(field, fldarray)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="match_partial-source">
+<pre>
+<span class="ruby-comment"># File lib/vizi/vizi_tracker.rb, line 162</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">match_partial</span> (<span class="ruby-identifier">field</span>, <span class="ruby-identifier">fldarray</span>)
+  <span class="ruby-identifier">hit</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">hit</span> = <span class="ruby-identifier">fldarray</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">field</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">hit</span>
+  <span class="ruby-identifier">i</span> = <span class="ruby-value">0</span>
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">fldarray</span>.<span class="ruby-identifier">length</span>
+    <span class="ruby-identifier">hit</span> = <span class="ruby-identifier">field</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">fldarray</span>)
+    <span class="ruby-keyword">break</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">hit</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+    <span class="ruby-identifier">i</span> = <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">hit</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- match_partial-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- match_partial-method -->
+
+      
+        <div id="parse_line-method" class="method-detail ">
+          <a name="method-i-parse_line"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">parse_line</span><span
+              class="method-args">(line, logformat)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>apache files ... regex the file to determine logformat name IIS files ...
+parse the fields string to determine the file contents</p>
+            
+
+            
+            <div class="method-source-code" id="parse_line-source">
+<pre>
+<span class="ruby-comment"># File lib/vizi/vizi_tracker.rb, line 177</span>
+    <span class="ruby-keyword">def</span> <span class="ruby-identifier">parse_line</span>(<span class="ruby-identifier">line</span>, <span class="ruby-identifier">logformat</span>)
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">logformat</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+        <span class="ruby-identifier">log_format</span> = <span class="ruby-identifier">logformat</span> <span class="ruby-comment"># get log_format string</span>
+        <span class="ruby-ivar">@format_name</span> = <span class="ruby-string">&quot;temp&quot;</span>
+        <span class="ruby-identifier">data</span> = <span class="ruby-identifier">line</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">' '</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-ivar">@format_name</span> = <span class="ruby-identifier">check_format</span>(<span class="ruby-identifier">line</span>) <span class="ruby-comment"># look for matching formats, check each time</span>
+        <span class="ruby-identifier">log_format</span> = <span class="ruby-ivar">@known_formats</span>[<span class="ruby-ivar">@format_name</span>] <span class="ruby-comment"># found a matched format</span>
+        <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">log_format</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">line</span> <span class="ruby-operator">!~</span> <span class="ruby-identifier">log_format</span>.<span class="ruby-identifier">format_regex</span>
+        <span class="ruby-identifier">data</span> = <span class="ruby-identifier">line</span>.<span class="ruby-identifier">downcase</span>.<span class="ruby-identifier">scan</span>(<span class="ruby-identifier">log_format</span>.<span class="ruby-identifier">format_regex</span>).<span class="ruby-identifier">flatten</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">parsed_data</span> = {}
+      <span class="ruby-identifier">log_format</span>.<span class="ruby-identifier">format_symbols</span>.<span class="ruby-identifier">size</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-identifier">log_format</span>.<span class="ruby-identifier">format_symbols</span>[<span class="ruby-identifier">i</span>]] = <span class="ruby-identifier">data</span>[<span class="ruby-identifier">i</span>] <span class="ruby-comment"># load data for each format_symbol</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:dtstring</span>]
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:dtstring</span>] = <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:dtstring</span>][<span class="ruby-value">1</span><span class="ruby-operator">...</span><span class="ruby-value">-1</span>]
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:dtstring</span>] = <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:dtstring</span>].<span class="ruby-identifier">sub</span>(<span class="ruby-string">&quot;:&quot;</span>, <span class="ruby-string">&quot; &quot;</span>)
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-comment"># Add ip as domain if we don't have a domain (virtual host)</span>
+      <span class="ruby-comment"># Assumes we always have an ip</span>
+<span class="ruby-comment">#    parsed_data[:domain] = parsed_data[:ip] unless parsed_data[:domain]  ##&lt;&lt;-- don't know this</span>
+<span class="ruby-comment">#    parsed_data[:format_name] = @format_name</span>
+
+      <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_logformatname</span>] = <span class="ruby-ivar">@format_name</span>.<span class="ruby-identifier">to_s</span>
+      <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_logformat</span>] = <span class="ruby-identifier">logformat</span>
+      <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_visitortype</span>] = <span class="ruby-string">&quot;H&quot;</span> <span class="ruby-comment"># set default visitor type (H)uman</span>
+      <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_linetype</span>] = <span class="ruby-string">&quot;V&quot;</span> <span class="ruby-comment"># linetype is (V)isitors</span>
+      <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_linetype</span>] = <span class="ruby-string">&quot;C&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:ip</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-comment"># reset if a comment line</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-ivar">@format_name</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;w3c_f&quot;</span> <span class="ruby-comment"># IIS file name ... generic</span>
+        <span class="ruby-ivar">@format</span> = <span class="ruby-identifier">build_format</span>(<span class="ruby-identifier">line</span>) <span class="ruby-comment"># parse fields to get log_format</span>
+        <span class="ruby-identifier">temp_format</span> = <span class="ruby-constant">Vizi</span><span class="ruby-operator">::</span><span class="ruby-constant">LogFormat</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:temp</span>, <span class="ruby-ivar">@format</span>) <span class="ruby-comment"># create temp format</span>
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_logformat</span>] = <span class="ruby-identifier">temp_format</span> <span class="ruby-comment"># shuttle the log_format object</span>
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_logformatname</span>] = <span class="ruby-string">&quot;temp&quot;</span> <span class="ruby-comment"># change the name</span>
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_linetype</span>] = <span class="ruby-string">&quot;F&quot;</span> <span class="ruby-comment"># linetype to (F)ield list</span>
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_visitortype</span>] = <span class="ruby-string">&quot;-&quot;</span> <span class="ruby-comment"># visitor type not relevant</span>
+      <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@format_name</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;w3c_c&quot;</span> <span class="ruby-comment"># IIS file name ... comments</span>
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_linetype</span>] = <span class="ruby-string">&quot;C&quot;</span> <span class="ruby-comment"># linetype is (C)omment</span>
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_visitortype</span>] = <span class="ruby-string">&quot;-&quot;</span>
+      <span class="ruby-keyword">elsif</span>  <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_linetype</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;C&quot;</span>
+        <span class="ruby-ivar">@parselog</span>.<span class="ruby-identifier">warn</span> <span class="ruby-identifier">line</span>
+        <span class="ruby-ivar">@parselog</span>.<span class="ruby-identifier">warn</span> <span class="ruby-string">&quot;Found comment lines embedded in the log file ... resetting to nil&quot;</span>
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_logformat</span>] = <span class="ruby-keyword">nil</span>
+      <span class="ruby-keyword">else</span> <span class="ruby-comment"># parsing the field names</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:datestring</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+          <span class="ruby-identifier">dt</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:datestring</span>]<span class="ruby-operator">+</span><span class="ruby-string">&quot; &quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:timestring</span>])
+          <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:datetime</span>] = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">gm</span>(<span class="ruby-identifier">dt</span>.<span class="ruby-identifier">year</span>, <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">month</span>, <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">day</span>, <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">hour</span>, <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">min</span>, <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">sec</span>)
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:dtstring</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+          <span class="ruby-identifier">dt</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:dtstring</span>])
+          <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:datetime</span>] = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">gm</span>(<span class="ruby-identifier">dt</span>.<span class="ruby-identifier">year</span>, <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">month</span>, <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">day</span>, <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">hour</span>, <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">min</span>, <span class="ruby-identifier">dt</span>.<span class="ruby-identifier">sec</span>)
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:request</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+          <span class="ruby-identifier">splitrequest</span> = <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:request</span>].<span class="ruby-identifier">gsub</span>(<span class="ruby-string">&quot;/&quot;</span>, <span class="ruby-string">&quot; &quot;</span>).<span class="ruby-identifier">split</span>
+          <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:csuristem</span>] = <span class="ruby-identifier">splitrequest</span>[<span class="ruby-value">1</span>]
+        <span class="ruby-keyword">end</span>
+
+<span class="ruby-comment">#     Now classify records based on logger rules ...</span>
+
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_pageflag</span>] = <span class="ruby-keyword">false</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-ivar">@accept_only_homepage</span>
+          <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_pageflag</span>] = <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:csuristem</span>].<span class="ruby-identifier">downcase</span>.<span class="ruby-identifier">index</span>(<span class="ruby-ivar">@homepage</span>) <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_pageflag</span>] = <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">match_partial</span>(<span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:csuristem</span>], <span class="ruby-ivar">@page_extensions</span>)
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_linetype</span>] = <span class="ruby-string">&quot;D&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@drops</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:ip</span>])
+        <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_visitortype</span>] = <span class="ruby-string">&quot;S&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@sips</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:ip</span>])
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:user_agent</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+          <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_visitortype</span>] = <span class="ruby-string">&quot;S&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">match_partial</span>(<span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:user_agent</span>], <span class="ruby-ivar">@snames</span>)
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:referer</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">and</span> <span class="ruby-ivar">@drop_refers_by_hostname</span>
+          <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_linetype</span>] = <span class="ruby-string">&quot;D&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:referer</span>].<span class="ruby-identifier">index</span>(<span class="ruby-ivar">@hostname</span>) <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:referer</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+          <span class="ruby-identifier">y</span> = (<span class="ruby-regexp">/(search\?\S*?[pq])=(\S*?)(&amp;)/</span>).<span class="ruby-identifier">match</span>(<span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:referer</span>])
+          <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_searchphrase</span>] = <span class="ruby-identifier">y</span>[<span class="ruby-value">2</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">y</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+          <span class="ruby-comment">#p parsed_data[:ip] if y != nil</span>
+          <span class="ruby-comment">#p parsed_data[:p_searchphrase] if y != nil</span>
+          <span class="ruby-keyword">if</span> <span class="ruby-ivar">@drop_refers_by_hostname</span>
+            <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:p_linetype</span>] = <span class="ruby-string">&quot;D&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">parsed_data</span>[<span class="ruby-value">:referer</span>].<span class="ruby-identifier">index</span>(<span class="ruby-ivar">@hostname</span>) <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+          <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+
+      <span class="ruby-keyword">end</span>
+<span class="ruby-comment">#    p parsed_data    </span>
+      <span class="ruby-identifier">parsed_data</span>
+    <span class="ruby-keyword">end</span></pre>
+            </div><!-- parse_line-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- parse_line-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+
