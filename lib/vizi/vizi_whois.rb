@@ -107,7 +107,7 @@ module Vizi
       country_list = ["GERMANY","UNITED KINGDOM","UK","ENGLAND","INDIA","NETHERLANDS","SPAIN","BELGIUM","PR CHINA","NORWAY"]
       odd_list = ["EMAIL","CONTA","PHONE","ABUSE ","SENT ","SEND ","DATE ","ATTN ","INFRA","THIS ","ANTIA","*****","-----"]
 
-      formatted_file = File.open('./log/formatted.log', 'a')
+#      formatted_file = File.open('./log/formatted.log', 'a')
 
       a = contents.upcase.split(/\n/) 
       i = -1
@@ -119,9 +119,9 @@ module Vizi
       netname_count = 0
       darray = []
       outstring = "" 
-      formatted_file.puts '+ ------------------------------------------------------'
-      formatted_file.puts '+ '+ country + ' - ' + server.upcase
-      formatted_file.puts '+ ------------------------------------------------------'         
+#      formatted_file.puts '+ ------------------------------------------------------'
+#      formatted_file.puts '+ '+ country + ' - ' + server.upcase
+#      formatted_file.puts '+ ------------------------------------------------------'         
       while i < a.length-1
         i = i + 1
         line = [nil, nil]
@@ -140,12 +140,12 @@ module Vizi
               line[0] = lastname
             end         
           else
-			addressflag = true if line[0] == "ADDRESS"
+						addressflag = true if line[0] == "ADDRESS"
           end 
-		  line[1] = line[1].lstrip.gsub(".","")
-		  line[1] = line[1].lstrip.gsub(", ",",")
-		  line[1] = line[1].lstrip.gsub(" ,",",")
-		  line[1] = line[1].chomp(",")	  		            
+					line[1] = line[1].lstrip.gsub(".","")
+					line[1] = line[1].lstrip.gsub(", ",",")
+					line[1] = line[1].lstrip.gsub(" ,",",")
+					line[1] = line[1].chomp(",")	  		            
           country_count = country_count + 1 if line[0] == "COUNTRY"
           da_count = da_count + 1 if line[0] == "DESCR" or line[0] == "ADDRESS"
           netname_count = netname_count + 1 if line[0] == "NETNAME"          
@@ -170,9 +170,9 @@ module Vizi
         lastname = line[0]  
         if goodline
           if name_list.index(line[0])
-            newline = line[0] + ': ' + line[1]
-            formatted_file.puts '+ ' + newline
-            outstring = outstring + newline + "\n"
+            newline = line[0] + ': ' + line[1] + '\n'
+#            formatted_file.puts '+ ' + newline
+            outstring = outstring + newline
           else
 #            formatted_file.puts '. ' + line[0] + ':: ' + line[1]         
           end

@@ -5,8 +5,8 @@
 #
 # Author::    Al Kivi <al.kivi@vizitrax.com>
 
-require './lib/vizi_whois'
-## require 'vizi_whois'
+## require './lib/vizi_whois'
+require 'vizi_whois'
 
 require 'logger'
 require 'socket'
