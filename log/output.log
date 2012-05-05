@@ -1,111 +1,58 @@
 ----------------------------------------------------------------
-> 79.142.69.69
->> NL
->>> ripe
-----------------------------------------------------------------
-% This is the RIPE Database query service.
-% The objects are in RPSL format.
-%
-% The RIPE Database is subject to Terms and Conditions.
-% See http://www.ripe.net/db/support/db-terms-conditions.pdf
-
-% Note: this output has been filtered.
-%       To receive output for a database update, use the "-B" flag.
-
-% Information related to '79.142.68.0 - 79.142.71.255'
-
-inetnum:        79.142.68.0 - 79.142.71.255
-netname:        ALTUSHOST-NET
-descr:          AltusHost Inc.
-country:        NL
-admin-c:        AHN-RIPE
-tech-c:         AHN-RIPE
-status:         ASSIGNED PA
-mnt-by:         ALTUSHOST-MNT
-mnt-by:         ALTUSHOST-MNT
-mnt-lower:      ALTUSHOST-MNT
-mnt-routes:     ALTUSHOST-MNT
-source:         RIPE # Filtered
-
-role:           AltusHost - Contact Role
-address:        ALTUSHOST INC.
-address:        P.O. Box 1106
-address:        Belize City, Belize
-address:        Central America
-phone:          +1.2176507100
-fax-no:         +1.8012892788
-abuse-mailbox:  abuse@altushost.com
-abuse-mailbox:  abuse@nelux.net
-admin-c:        AHN-RIPE
-tech-c:         AHN-RIPE
-nic-hdl:        AHN-RIPE
-mnt-by:         ALTUS-MNT
-source:         RIPE # Filtered
-
-% Information related to '79.142.64.0/20AS49544'
-
-route:          79.142.64.0/20
-descr:          ALTUSHOST INC.
-origin:         AS49544
-mnt-by:         ALTUSHOST-MNT
-source:         RIPE # Filtered
-
-
-----------------------------------------------------------------
-> 66.119.167.210
+> 74.12.40.41
 >> CA
 >>> arin
 ----------------------------------------------------------------
 #
 # The following results may also be obtained via:
-# http://whois.arin.net/rest/nets;handle=NET-66-119-160-0-1?showDetails=true&showARIN=false
+# http://whois.arin.net/rest/nets;handle=NET-74-12-0-0-1?showDetails=true&showARIN=false&ext=netref2
 #
 
-NetRange:       66.119.160.0 - 66.119.191.255
-CIDR:           66.119.160.0/19
-OriginAS:       AS25976
-NetName:        METROBRIDGE-NET
-NetHandle:      NET-66-119-160-0-1
-Parent:         NET-66-0-0-0-0
+NetRange:       74.12.0.0 - 74.15.255.255
+CIDR:           74.12.0.0/14
+OriginAS:       
+NetName:        BELLNEXXIA-11
+NetHandle:      NET-74-12-0-0-1
+Parent:         NET-74-0-0-0-0
 NetType:        Direct Allocation
-RegDate:        2001-06-08
-Updated:        2008-06-27
-Ref:            http://whois.arin.net/rest/net/NET-66-119-160-0-1
+Comment:        For abuse cases please use abuse@in.bell.ca
+RegDate:        2006-01-19
+Updated:        2006-04-10
+Ref:            http://whois.arin.net/rest/net/NET-74-12-0-0-1
 
-OrgName:        MetroBridge Networks Corporation
-OrgId:          MNC-40
-Address:        918 - 1030 West Georgia Street
-City:           Vancouver
-StateProv:      BC
-PostalCode:     V6E-2Y3
+OrgName:        Bell Canada
+OrgId:          LINX
+City:           toronto
+StateProv:      ON
+PostalCode:     K1G-3J4
 Country:        CA
-RegDate:        2005-12-12
-Updated:        2010-04-01
-Ref:            http://whois.arin.net/rest/org/MNC-40
+RegDate:        1990-03-09
+Updated:        2008-10-04
+Ref:            http://whois.arin.net/rest/org/LINX
 
-OrgTechHandle: MTP7-ARIN
-OrgTechName:   MBN Tech POC
-OrgTechPhone:  +1-604-628-1240 
-OrgTechEmail:  MBNtechPOC@metrobridge.com
-OrgTechRef:    http://whois.arin.net/rest/poc/MTP7-ARIN
+OrgAbuseHandle: ABAI1-ARIN
+OrgAbuseName:   Abuse Business abuse issues
+OrgAbusePhone:  +1-877-877-2426 
+OrgAbuseEmail:  abuse@bellnexxia.net
+OrgAbuseRef:    http://whois.arin.net/rest/poc/ABAI1-ARIN
 
-RNOCHandle: MTP7-ARIN
-RNOCName:   MBN Tech POC
-RNOCPhone:  +1-604-628-1240 
-RNOCEmail:  MBNtechPOC@metrobridge.com
-RNOCRef:    http://whois.arin.net/rest/poc/MTP7-ARIN
+OrgAbuseHandle: ABUSE1127-ARIN
+OrgAbuseName:   Abuse
+OrgAbusePhone:  +1-877-877-2426 
+OrgAbuseEmail:  abuse@bellnexxia.net
+OrgAbuseRef:    http://whois.arin.net/rest/poc/ABUSE1127-ARIN
 
-RTechHandle: MTP7-ARIN
-RTechName:   MBN Tech POC
-RTechPhone:  +1-604-628-1240 
-RTechEmail:  MBNtechPOC@metrobridge.com
-RTechRef:    http://whois.arin.net/rest/poc/MTP7-ARIN
+OrgTechHandle: SYSAD1-ARIN
+OrgTechName:   NOC technical Support
+OrgTechPhone:  +1-800-565-0567 
+OrgTechEmail:  inoc@bell.ca
+OrgTechRef:    http://whois.arin.net/rest/poc/SYSAD1-ARIN
 
-RAbuseHandle: MTP7-ARIN
-RAbuseName:   MBN Tech POC
-RAbusePhone:  +1-604-628-1240 
-RAbuseEmail:  MBNtechPOC@metrobridge.com
-RAbuseRef:    http://whois.arin.net/rest/poc/MTP7-ARIN
+RTechHandle: PD135-ARIN
+RTechName:   Daoust, Philippe 
+RTechPhone:  +1-800-450-7771 
+RTechEmail:  inoc@bell.ca
+RTechRef:    http://whois.arin.net/rest/poc/PD135-ARIN
 
 #
 # ARIN WHOIS data and services are subject to the Terms of Use
@@ -113,125 +60,228 @@ RAbuseRef:    http://whois.arin.net/rest/poc/MTP7-ARIN
 #
 
 ----------------------------------------------------------------
-> 219.91.245.192
->> IN
->>> apnic
-----------------------------------------------------------------
-% [whois.apnic.net node-4]
-% Whois data copyright terms    http://www.apnic.net/db/dbcopyright.html
-
-inetnum:      219.91.240.0 - 219.91.255.255
-netname:      YOUTELE
-descr:        YOU Telecom India Pvt Ltd
-country:      IN
-admin-c:      SG135-AP
-tech-c:       NI23-AP
-status:       ASSIGNED NON-PORTABLE
-mnt-by:       MAINT-IN-YOU
-changed:      network@youtele.com  20091209
-source:       APNIC
-
-route:          219.91.192.0/18
-descr:          YOU Broadband & Cable India Ltd.
-country:        IN
-origin:         AS18207
-mnt-by:         MAINT-IN-YOU
-changed:        hm-changed@apnic.net 20040706
-changed:        hm-changed@apnic.net 20050831
-changed:        hm-changed@apnic.net 20100323
-source:         APNIC
-
-person:         SRIDHAR G
-nic-hdl:        SG135-AP
-e-mail:         gr.sridhar@youbroadband.co.in
-remarks:        -----------------------------------------
-remarks:        send abuse and spam report to
-remarks:        abuse@youbroadband.in or spamlog@youbroadband.in
-remarks:        -----------------------------------------
-address:        YOU Broadband & Cable India Ltd.
-address:        Millenium Arcade, 2nd floor
-address:        Adajan-Hazira Road
-address:        Surat -395009,Gujarat
-address:        India
-phone:          +91-261-2789500
-fax-no:         +91-261-2789501
-country:        IN
-changed:        network@youbroadband.in 20100512
-mnt-by:         MAINT-IN-YOU
-changed:        hm-changed@apnic.net 20100512
-source:         APNIC
-
-person:         NOC IQARA
-nic-hdl:        NI23-AP
-e-mail:         network@youtele.com
-address:        YOU Broadband & Cable India Ltd.
-address:        Iqara Center
-address:        Adajan-Hazira Rd
-address:        Surat-9
-phone:          +91-261-2789500
-fax-no:         +91-261-2789501
-country:        IN
-changed:        network@youtele.com 20061103
-mnt-by:         MAINT-IN-YOU
-source:         APNIC
-
-
-----------------------------------------------------------------
-> 2001:4860:b002::68
+> 74.7.249.38
 >> US
 >>> arin
 ----------------------------------------------------------------
 #
 # The following results may also be obtained via:
-# http://whois.arin.net/rest/nets;q=2001:4860:b002::68?showDetails=true&showARIN=false
+# http://whois.arin.net/rest/nets;q=74.7.249.38?showDetails=true&showARIN=false&ext=netref2
 #
 
-NetRange:       2001:4860:: - 2001:4860:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
-CIDR:           2001:4860::/32
-OriginAS:       AS15169
-NetName:        GOOGLE-IPV6
-NetHandle:      NET6-2001-4860-1
-Parent:         NET6-2001-4800-0
+NetRange:       74.7.0.0 - 74.7.255.255
+CIDR:           74.7.0.0/16
+OriginAS:       
+NetName:        CBEY-XX-XX-XX-XX
+NetHandle:      NET-74-7-0-0-1
+Parent:         NET-74-0-0-0-0
 NetType:        Direct Allocation
-RegDate:        2005-03-14
-Updated:        2007-09-28
-Ref:            http://whois.arin.net/rest/net/NET6-2001-4860-1
+Comment:        For prompt attention, please send all abuse (spam,
+Comment:        DOS, etc) correspondence
+Comment:        to our Abuse handle...(abuse@cbeyond.net) -Cbeyond
+Comment:        rwhois.cbeyond.net:4321
+RegDate:        2007-03-09
+Updated:        2012-03-02
+Ref:            http://whois.arin.net/rest/net/NET-74-7-0-0-1
 
-
-OrgName:        Google Inc.
-OrgId:          GOGL
-Address:        1600 Amphitheatre Parkway
-City:           Mountain View
-StateProv:      CA
-PostalCode:     94043
+OrgName:        CBEYOND COMMUNICATIONS, LLC
+OrgId:          CBEY
+Address:        320 Interstate North Parkway
+Address:        Suite 300
+City:           Atlanta
+StateProv:      GA
+PostalCode:     30339
 Country:        US
-RegDate:        2000-03-30
-Updated:        2009-08-07
-Ref:            http://whois.arin.net/rest/org/GOGL
+RegDate:        2000-08-03
+Updated:        2011-07-13
+Comment:        For prompt attention, please send all abuse
+Comment:        (spam, DOS, etc) correspondence to our
+Comment:        Abuse handle. -Cbeyond
+Ref:            http://whois.arin.net/rest/org/CBEY
 
-OrgTechHandle: ZG39-ARIN
-OrgTechName:   Google Inc
-OrgTechPhone:  +1-650-253-0000 
-OrgTechEmail:  arin-contact@google.com
-OrgTechRef:    http://whois.arin.net/rest/poc/ZG39-ARIN
+OrgTechHandle: AI93-ARIN
+OrgTechName:   Admin IP
+OrgTechPhone:  +1-678-424-2400 
+OrgTechEmail:  ip-admin@cbeyond.net
+OrgTechRef:    http://whois.arin.net/rest/poc/AI93-ARIN
 
-RNOCHandle: ZG39-ARIN
-RNOCName:   Google Inc
-RNOCPhone:  +1-650-253-0000 
-RNOCEmail:  arin-contact@google.com
-RNOCRef:    http://whois.arin.net/rest/poc/ZG39-ARIN
+OrgAbuseHandle: ABUSE294-ARIN
+OrgAbuseName:   Cbeyond-Abuse
+OrgAbusePhone:  +1-678-424-2400 
+OrgAbuseEmail:  abuse@cbeyond.net
+OrgAbuseRef:    http://whois.arin.net/rest/poc/ABUSE294-ARIN
 
-RAbuseHandle: ZG39-ARIN
-RAbuseName:   Google Inc
-RAbusePhone:  +1-650-253-0000 
-RAbuseEmail:  arin-contact@google.com
-RAbuseRef:    http://whois.arin.net/rest/poc/ZG39-ARIN
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/whois_tou.html
+#
 
-RTechHandle: ZG39-ARIN
-RTechName:   Google Inc
-RTechPhone:  +1-650-253-0000 
-RTechEmail:  arin-contact@google.com
-RTechRef:    http://whois.arin.net/rest/poc/ZG39-ARIN
+----------------------------------------------------------------
+> 10.131.0.4
+>> US
+>>> arin
+----------------------------------------------------------------
+#
+# The following results may also be obtained via:
+# http://whois.arin.net/rest/nets;q=10.131.0.4?showDetails=true&showARIN=false&ext=netref2
+#
+
+NetRange:       10.0.0.0 - 10.255.255.255
+CIDR:           10.0.0.0/8
+OriginAS:       
+NetName:        PRIVATE-ADDRESS-ABLK-RFC1918-IANA-RESERVED
+NetHandle:      NET-10-0-0-0-1
+Parent:         
+NetType:        IANA Special Use
+Comment:        This block is used as private address space.
+Comment:        Traffic from these addresses does not come from IANA.
+Comment:        IANA has simply reserved these numbers in its database 
+Comment:        and does not use or operate them. We are not the source 
+Comment:        of activity you may see on logs or in e-mail records.
+Comment:        Please refer to  http://www.iana.org/abuse/
+Comment:             
+Comment:        Addresses from this block can be used by 
+Comment:        anyone without any need to coordinate with 
+Comment:        IANA or an Internet registry. Addresses from
+Comment:        this block are used in multiple, separately 
+Comment:        operated networks.
+Comment:        
+Comment:        This block was assigned by the IETF in the
+Comment:        Best Current Practice document, RFC 1918
+Comment:        which can be found at:
+Comment:        
+Comment:        http://www.rfc-editor.org/rfc/rfc1918.txt
+RegDate:        
+Updated:        2011-04-12
+Ref:            http://whois.arin.net/rest/net/NET-10-0-0-0-1
+
+OrgName:        Internet Assigned Numbers Authority
+OrgId:          IANA
+Address:        4676 Admiralty Way, Suite 330
+City:           Marina del Rey
+StateProv:      CA
+PostalCode:     90292-6695
+Country:        US
+RegDate:        
+Updated:        2004-02-24
+Ref:            http://whois.arin.net/rest/org/IANA
+
+OrgTechHandle: IANA-IP-ARIN
+OrgTechName:   Internet Corporation for Assigned Names and Number
+OrgTechPhone:  +1-310-301-5820 
+OrgTechEmail:  abuse@iana.org
+OrgTechRef:    http://whois.arin.net/rest/poc/IANA-IP-ARIN
+
+OrgAbuseHandle: IANA-IP-ARIN
+OrgAbuseName:   Internet Corporation for Assigned Names and Number
+OrgAbusePhone:  +1-310-301-5820 
+OrgAbuseEmail:  abuse@iana.org
+OrgAbuseRef:    http://whois.arin.net/rest/poc/IANA-IP-ARIN
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/whois_tou.html
+#
+
+----------------------------------------------------------------
+> 74.146.62.218
+>> US
+>>> arin
+----------------------------------------------------------------
+#
+# The following results may also be obtained via:
+# http://whois.arin.net/rest/nets;handle=NET-74-144-0-0-1?showDetails=true&showARIN=false&ext=netref2
+#
+
+NetRange:       74.144.0.0 - 74.159.255.255
+CIDR:           74.144.0.0/12
+OriginAS:       
+NetName:        COMCAST-VOIP-3
+NetHandle:      NET-74-144-0-0-1
+Parent:         NET-74-0-0-0-0
+NetType:        Direct Allocation
+RegDate:        2006-06-28
+Updated:        2010-02-01
+Ref:            http://whois.arin.net/rest/net/NET-74-144-0-0-1
+
+OrgName:        Comcast Cable Communications, LLC
+OrgId:          CCCS
+Address:        1800 Bishops Gate Blvd
+City:           Mt Laurel
+StateProv:      NJ
+PostalCode:     08054
+Country:        US
+RegDate:        2001-09-18
+Updated:        2008-10-04
+Ref:            http://whois.arin.net/rest/org/CCCS
+
+OrgTechHandle: IC161-ARIN
+OrgTechName:   Comcast Cable Communications Inc
+OrgTechPhone:  +1-856-317-7200 
+OrgTechEmail:  CNIPEO-Ip-registration@cable.comcast.com
+OrgTechRef:    http://whois.arin.net/rest/poc/IC161-ARIN
+
+OrgAbuseHandle: NAPO-ARIN
+OrgAbuseName:   Network Abuse and Policy Observance
+OrgAbusePhone:  +1-856-317-7272 
+OrgAbuseEmail:  abuse@comcast.net
+OrgAbuseRef:    http://whois.arin.net/rest/poc/NAPO-ARIN
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/whois_tou.html
+#
+
+----------------------------------------------------------------
+> 144.36.232.162
+>> US
+>>> arin
+----------------------------------------------------------------
+#
+# The following results may also be obtained via:
+# http://whois.arin.net/rest/nets;q=144.36.232.162?showDetails=true&showARIN=false&ext=netref2
+#
+
+NetRange:       144.36.0.0 - 144.36.255.255
+CIDR:           144.36.0.0/16
+OriginAS:       
+NetName:        ACCENTURE-2
+NetHandle:      NET-144-36-0-0-1
+Parent:         NET-144-0-0-0-0
+NetType:        Direct Assignment
+RegDate:        1990-11-09
+Updated:        2008-12-31
+Ref:            http://whois.arin.net/rest/net/NET-144-36-0-0-1
+
+OrgName:        Accenture
+OrgId:          ACCENT-10
+Address:        1950 Stemmons Freeway
+Address:        Suite 5002
+City:           Dallas
+StateProv:      TX
+PostalCode:     75207
+Country:        US
+RegDate:        
+Updated:        2011-09-24
+Ref:            http://whois.arin.net/rest/org/ACCENT-10
+
+OrgTechHandle: RPP1-ARIN
+OrgTechName:   Provost, Ronnie P.
+OrgTechPhone:  +1-469-665-6551 
+OrgTechEmail:  dnsadmin@accenture.com
+OrgTechRef:    http://whois.arin.net/rest/poc/RPP1-ARIN
+
+OrgAbuseHandle: RPP1-ARIN
+OrgAbuseName:   Provost, Ronnie P.
+OrgAbusePhone:  +1-469-665-6551 
+OrgAbuseEmail:  dnsadmin@accenture.com
+OrgAbuseRef:    http://whois.arin.net/rest/poc/RPP1-ARIN
+
+RTechHandle: RPP1-ARIN
+RTechName:   Provost, Ronnie P.
+RTechPhone:  +1-469-665-6551 
+RTechEmail:  dnsadmin@accenture.com
+RTechRef:    http://whois.arin.net/rest/poc/RPP1-ARIN
 
 #
 # ARIN WHOIS data and services are subject to the Terms of Use
