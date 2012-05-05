@@ -5,11 +5,13 @@
 #
 # Author::    Al Kivi <al.kivi@vizitrax.com>
 
-## require './lib/vizi_whois'
+#require 'c:\rails\vizi_whois\lib\vizi_whois'
+require 'rubygems'   # needed for ruby 1.8.7
 require 'vizi_whois'
 
 require 'logger'
 require 'socket'
+require 'yaml'
  
 syslog = Logger.new('./log/system.log',shift_age = 'weekly')
 syslog.info "Starting IP address test file ... >>> "+Time.now.to_s
@@ -19,10 +21,13 @@ out_file = File.new('./log/output.log', 'w')
 File.delete('./log/formatted.log') if File.exist?('./log/formatted.log') 
 parse_file = File.new('./log/formatted.log', 'w')
 
+p 'starting'
+
 # Open test file for reading
 File.open('./data/testfile.txt', 'r') do |file|
   rec_count = 0
   while(line = file.gets) # Read each line of the test file, one IP address per line
+  p line
     @whoisresult = Vizi::Gowhois.new
     p line.chomp
     rarray = @whoisresult.query(line.chomp)
@@ -34,7 +39,8 @@ File.open('./data/testfile.txt', 'r') do |file|
     out_file.puts '----------------------------------------------------------------'    
     out_file.puts @contents
     @result = Vizi::Formatter.new
-    @formatted = @result.parse(@contents, rarray[1], rarray[2]) 
+    @formatted = @result.parse(@contents, rarray[1]) 
+    @formatted = @formatted.gsub('\n','<br/>') 
     p @formatted   
     rec_count = rec_count + 1 
   end
